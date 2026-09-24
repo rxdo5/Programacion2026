@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UT2 {
+public class ut2 {
 
         public static void ejercicio3() { //------------------------------------------------
             //Nombre del programa: Ejercicio 3
