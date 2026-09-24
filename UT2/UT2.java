@@ -248,12 +248,29 @@ public class ut2 {
                 try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE");
-                int deposit = sc.nextInt();
+                double deposit = sc.nextDouble();
 
-                int winnings = (deposit / 100) * 15;
+                double interest = (deposit * 0.015);
             
-                System.out.println("Las ganancias serán: "+ winnings +".");
-                System.out.println("El saldo final será de: "+ (deposit + winnings) +".");
+                System.out.println("Los intereses generados serán: "+ interest +".");
+                System.out.println("El saldo final será de: "+ (deposit + interest) +".");
+                
+                } //autoclose scanner
+        }
+
+        public static void ejercicio20() { //------------------------------------------------
+                try(Scanner sc = new Scanner(System.in)) {
+
+                System.out.println("Introduce el capital a ingresar al 1,5% TAE con una retención del 20%");
+                double deposit = sc.nextDouble();
+
+                double interest = (deposit * 0.015);
+                double retention = (interest * 0.20);
+            
+                System.out.println("Los intereses generados serán: "+ interest +".");
+                System.out.println("Con una retención de: "+ retention +".");
+                System.out.println("Dando una suma de: "+ (interest - retention) +".");
+                System.out.println("El saldo final será de: "+ (deposit + interest - retention) +".");
                 
                 } //autoclose scanner
         }
