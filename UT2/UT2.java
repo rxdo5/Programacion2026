@@ -186,7 +186,7 @@ public class ut2 {
         }
 
         public static void explicacionScanner() { //------------------------------------------------
-                try(Scanner sc = new Scanner(System.in)) {
+            try(Scanner sc = new Scanner(System.in)) {
 
                 //num1
                 System.out.println("Introduce el primer número (Debe ser entero):");
@@ -205,19 +205,19 @@ public class ut2 {
                 //name
                 System.out.println("Introduce tu nombre:");
             
-         String nameLine = sc.nextLine(); // only reads till next \n
-					// String nameSpace = sc.next(); //incase you only want to read first word or till next space
+                String nameLine = sc.nextLine(); // only reads till next \n
+                // String nameSpace = sc.next(); //incase you only want to read first word or till next space
 
                 //name output
                 System.out.println("El nombre completo introducido es " + nameLine + ".");
                     // System.out.println("El nombre único introducido es " + nameSpace + "."); //incase you only want to display first word or till next space
 
-                } //autoclose scanner
+            } //autoclose scanner
         }
 
         public static void ejercicio17() { //------------------------------------------------
-                // Ejercicio 5 con Scanner
-                 try(Scanner sc = new Scanner(System.in)) {
+            // Ejercicio 5 con Scanner
+            try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Vamos a calcular el perímetro y área de un rectángulo o cuadrado.\nIntroduce la altura que tendrá:");
                 int h = sc.nextInt();
@@ -232,12 +232,12 @@ public class ut2 {
         		System.out.println("El Perímetro es de: " + p + " unidades");
         		System.out.println("El Área es de: " + a + " unidades");
 
-                } //autoclose scanner
+            } //autoclose scanner
         }
 
         public static void ejercicio18() { //------------------------------------------------
-                // Ejercicio 6 con Scanner
-                try(Scanner sc = new Scanner(System.in)) {      
+            // Ejercicio 6 con Scanner
+            try(Scanner sc = new Scanner(System.in)) {      
 
                 System.out.println("Vamos a calcular el perímetro y área de un círculo.\nIntroduce el radio que tendrá:");
                 int r = sc.nextInt();
@@ -246,12 +246,12 @@ public class ut2 {
         		System.out.println(" El perimetro del circulo es " + (2 * Math.PI * r));
         		System.out.println(" El area del circulo es " + (Math.PI * (r * r)));
 
-                } //autoclose scanner
+            } //autoclose scanner
         }
 
         public static void ejercicio19() { //------------------------------------------------
-                //Escriba un programa que visualice los intereses que pagará un banco después de 12 meses si tenemos una cuenta a plazo fijo al 1,5% anual y la cantidad la introduce el usuario por teclado.
-                try(Scanner sc = new Scanner(System.in)) {
+            //Escriba un programa que visualice los intereses que pagará un banco después de 12 meses si tenemos una cuenta a plazo fijo al 1,5% anual y la cantidad la introduce el usuario por teclado.
+            try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE");
                 double deposit = sc.nextDouble();
@@ -261,12 +261,12 @@ public class ut2 {
                 System.out.println("Los intereses generados serán: "+ interest +".");
                 System.out.println("El saldo final será de: "+ (deposit + interest) +".");
                 
-                } //autoclose scanner
+            } //autoclose scanner
         }
 
         public static void ejercicio20() { //------------------------------------------------
                 //Modifique el programa anterior teniendo en cuenta que a los intereses abonados se les aplica una retención del 20% sobre los intereses .
-                try(Scanner sc = new Scanner(System.in)) {
+            try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE con una retención del 20%");
                 double deposit = sc.nextDouble();
@@ -279,7 +279,7 @@ public class ut2 {
                 System.out.println("Dando una suma de: "+ (interest - retention) +".");
                 System.out.println("El saldo final será de: "+ (deposit + interest - retention) +".");
                 
-                } //autoclose scanner
+            } //autoclose scanner
         }
 
 }
