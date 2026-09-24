@@ -123,6 +123,7 @@ public class ut2 {
         }
 
         public static void ejercicio12() { //------------------------------------------------
+            //Defina los siguientes tipos enumerados: 
             String grades = "Sobresaliente, Notable, Bien, Suficiente, Insuficiente";
             String months = "Enero, Febrero, Marzo";
             String civilStatus = "Soltero, Casado, Divorciado, Viudo";
@@ -142,7 +143,7 @@ public class ut2 {
         }
 
         public static void ejercicio14() { //------------------------------------------------
-            /*Realice un programa que muestre el 123 utilizando cada uno de los tipos básicos. Analice la salida. */
+            //Realice un programa que muestre el 123 utilizando cada uno de los tipos básicos. Analice la salida.
             byte varByte = 123;
             short varShort = 123;
             int varInt = 123;
@@ -156,6 +157,7 @@ public class ut2 {
         }
 
         public static void ejercicio15() { //------------------------------------------------
+            // Realice un programa que muestre el 1234.5 utilizando cada uno de los tipos básicos. Analice la salida. 
             byte varByte = (byte) 1234.5;
             short varShort = (short) 1234.5;
             int varInt = (int) 1234.5;
@@ -169,6 +171,7 @@ public class ut2 {
         }
 
         public static void ejercicio16() { //------------------------------------------------
+            // Realice un programa que muestre el 1234567890.5 utilizando cada uno de los tipos básicos. Analice la salida.
             byte varByte = (byte) 1234567890.5;
             short varShort = (short) 1234567890.5;
             int varInt = (int) 1234567890.5;
@@ -213,6 +216,7 @@ public class ut2 {
         }
 
         public static void ejercicio17() { //------------------------------------------------
+                // Ejercicio 5 con Scanner
                  try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Vamos a calcular el perímetro y área de un rectángulo o cuadrado.\nIntroduce la altura que tendrá:");
@@ -232,6 +236,7 @@ public class ut2 {
         }
 
         public static void ejercicio18() { //------------------------------------------------
+                // Ejercicio 6 con Scanner
                 try(Scanner sc = new Scanner(System.in)) {      
 
                 System.out.println("Vamos a calcular el perímetro y área de un círculo.\nIntroduce el radio que tendrá:");
@@ -245,6 +250,7 @@ public class ut2 {
         }
 
         public static void ejercicio19() { //------------------------------------------------
+                //Escriba un programa que visualice los intereses que pagará un banco después de 12 meses si tenemos una cuenta a plazo fijo al 1,5% anual y la cantidad la introduce el usuario por teclado.
                 try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE");
@@ -259,6 +265,7 @@ public class ut2 {
         }
 
         public static void ejercicio20() { //------------------------------------------------
+                //Modifique el programa anterior teniendo en cuenta que a los intereses abonados se les aplica una retención del 20% sobre los intereses .
                 try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE con una retención del 20%");
