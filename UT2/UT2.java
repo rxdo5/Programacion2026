@@ -142,15 +142,44 @@ public class UT2 {
         }
 
         public static void ejercicio14() { //------------------------------------------------
-            
+            /*Realice un programa que muestre el 123 utilizando cada uno de los tipos básicos. Analice la salida. */
+            byte varByte = 123;
+            short varShort = 123;
+            int varInt = 123;
+            long varLong = 123;
+            float varFloat = 123;
+            double varDouble = 123;
+            char varChar = 123;
+            String varString = "123";
+
+            System.out.println("Byte " + varByte + ", Short " + varShort + ", Int " + varInt + ", Long " + varLong + ", Float " + varFloat + ", Double " + varDouble + ", Char " + varChar + ", String " + varString);
         }
 
         public static void ejercicio15() { //------------------------------------------------
-            
+            byte varByte = (byte) 1234.5;
+            short varShort = (short) 1234.5;
+            int varInt = (int) 1234.5;
+            long varLong = (long) 1234.5;
+            float varFloat = (float) 1234.5;
+            double varDouble = 1234.5;
+            char varChar = (char) 1234.5;
+            String varString = "1234.5";
+
+            System.out.println("Byte " + varByte + ", Short " + varShort + ", Int " + varInt + ", Long " + varLong + ", Float " + varFloat + ", Double " + varDouble + ", Char " + varChar + ", String " + varString);
         }
 
         public static void ejercicio16() { //------------------------------------------------
-            
+            byte varByte = (byte) 1234567890.5;
+            short varShort = (short) 1234567890.5;
+            int varInt = (int) 1234567890.5;
+            long varLong = (long) 1234567890.5;
+            float varFloat = (float) 1234567890.5;
+            double varDouble = 1234567890.5;
+            char varChar = (char) 1234567890.5;
+            String varString = "1234567890.5";
+
+            System.out.println("Byte " + varByte + ", Short " + varShort + ", Int " + varInt + ", Long " + varLong + ", Float " + varFloat + ", Double " + varDouble + ", Char " + varChar + ", String " + varString);
+
         }
 
         public static void explicacionScanner() { //------------------------------------------------
