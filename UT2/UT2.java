@@ -1,5 +1,4 @@
-import java.lang.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class UT2 {
 
@@ -92,7 +91,7 @@ public class UT2 {
         }
 
         public static void explicacionScanner() { //------------------------------------------------
-                Scanner sc = new Scanner(System.in);
+                try(Scanner sc = new Scanner(System.in)) {
 
                 //num1
                 System.out.println("Introduce el primer número (Debe ser entero):");
@@ -111,19 +110,18 @@ public class UT2 {
                 //name
                 System.out.println("Introduce tu nombre:");
             
-                String nameLine = sc.nextLine(); // only reads till next \n
+         String nameLine = sc.nextLine(); // only reads till next \n
 					// String nameSpace = sc.next(); //incase you only want to read first word or till next space
 
                 //name output
                 System.out.println("El nombre completo introducido es " + nameLine + ".");
                     // System.out.println("El nombre único introducido es " + nameSpace + "."); //incase you only want to display first word or till next space
 
-                //close scanner
-                sc.close();   
+                } //close scanner
         }
 
         public static void ejercicio17() { //------------------------------------------------
-                Scanner sc = new Scanner(System.in);
+                 try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Vamos a calcular el perímetro y área de un rectángulo o cuadrado.\nIntroduce la altura que tendrá:");
                 int h = sc.nextInt();
@@ -138,11 +136,11 @@ public class UT2 {
         		System.out.println("El Perímetro es de: " + p + " unidades");
         		System.out.println("El Área es de: " + a + " unidades");
 
-                sc.close();
+                } //close scanner
         }
 
         public static void ejercicio18() { //------------------------------------------------
-                Scanner sc = new Scanner(System.in);
+                try(Scanner sc = new Scanner(System.in)) {      
 
                 System.out.println("Vamos a calcular el perímetro y área de un círculo.\nIntroduce el radio que tendrá:");
                 int r = sc.nextInt();
@@ -151,12 +149,12 @@ public class UT2 {
         		System.out.println(" El perimetro del circulo es " + (2 * Math.PI * r));
         		System.out.println(" El area del circulo es " + (Math.PI * (r * r)));
 
-                sc.close();
+                } //close scanner
         }
 
         public static void ejercicio19() { //------------------------------------------------
-                Scanner sc = new Scanner(System.in);
-    
+                try(Scanner sc = new Scanner(System.in)) {
+
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE");
                 int deposit = sc.nextInt();
 
@@ -165,8 +163,7 @@ public class UT2 {
                 System.out.println("Las ganancias serán: "+ winnings +".");
                 System.out.println("El saldo final será de: "+ (deposit + winnings) +".");
                 
-            
-                sc.close();
+                } //close scanner
         }
 
 }
