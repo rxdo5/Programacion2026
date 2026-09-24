@@ -2,19 +2,26 @@ import java.util.Scanner;
 
 public class UT2 {
 
-        public static void ejercicio1() { //------------------------------------------------
-            
-        }
-
-        public static void ejercicio2() { //------------------------------------------------
-            
-        }
-
         public static void ejercicio3() { //------------------------------------------------
+            //Nombre del programa: Ejercicio 3
+            //1ºMV
+            //Ricardo Arroyo Iñiguez
             
+            String name = "Ricardo"; 
+            String surnames = "Arroyo Íñiguez";
+            int age = 21;
+            boolean enrolled= true;
+            double average= 0.5;
+
+            System.out.println("----- EJERCICIO DE VARIABLES Y TIPOS DE DATOS -----");
+            System.out.println("El alumno se llama: " + name+" "+surnames);
+            System.out.println("Tiene: " + age+" años");
+            System.out.println("Matriculado: " + enrolled);
+            System.out.println("Nota media: " + average);
         }
 
         public static void ejercicio4() { //------------------------------------------------
+            // Calcular la nota media
             double nota1 = 7.8;
             double nota2 = 4.7;
             double nota3 = 5.6;
@@ -29,6 +36,9 @@ public class UT2 {
         }
 
         public static void ejercicio5() { //------------------------------------------------
+            //Escriba un programa que visualice el área y perímetro de un rectángulo de lados 3ud y 5ud.
+            //Seleccione los tipos de datos adecuados. La salida se realizará en la misma línea.
+
             int h = 3;
     		int l = 5;
     		int p = (h*2) + (l*2);
@@ -40,6 +50,7 @@ public class UT2 {
         }
 
         public static void ejercicio6() { //------------------------------------------------
+            //Escriba un programa que visualice el área y perímetro de un círculo de radio 2ud. Seleccione los tipos de datos adecuados.
             int r = 2;
 
             System.out.println("En un círculo con un radio de " + r + " unidades, las medidas son las siguientes:");
@@ -48,15 +59,47 @@ public class UT2 {
         }
 
         public static void ejercicio7() { //------------------------------------------------
-            
+            // Escriba un programa que visualice el volumen de un cilindro, teniendo en cuenta que el radio=23.4 y altura=120.2
+            double r = 23.4;
+            double h = 120.2;
+
+            System.out.println("Datos del cilindro: ");
+            System.out.println("Radio: " + r);
+            System.out.println("Altura: " + h);
+            System.out.println("El volumen del cilindro es: " + (Math.PI * (r * r) * h));
         }
 
         public static void ejercicio8() { //------------------------------------------------
-            
+            //Escriba un programa que visualice la nota media de las siguientes asignaturas: Matemáticas, Lengua,Inglés, Informática.
+            String name = "Mónica García";
+            int math = 6;
+            int spanish = 7;
+            int english = 4;
+            int computer = 6;
+            double average = (math + spanish + english + computer) / 4.0;
+
+            System.out.println("Alumna: " + name);
+            System.out.println("Matemáticas: " + math);
+            System.out.println("Lengua: " + spanish);
+            System.out.println("Inglés: " + english);
+            System.out.println("Informática: " + computer);
+            System.out.println("Nota media: " + average);   
         }
 
         public static void ejercicio9() { //------------------------------------------------
-            
+            //Escriba un programa que visualice el precio final de compra de una camiseta cuyo precio es 15€. La camiseta tiene un descuento del 20% y el IVA aplicable es del 17%
+            String article = "Camiseta";
+            double value = 15.0; // Precio
+
+            double discountAmount = value * 0.2; // 20% del precio base
+            double valueAfterDiscount = value - discountAmount; // Precio después del descuento del 20%
+            double vatAmount = valueAfterDiscount * 0.17; // 17% del precio sin IVA 
+            double afterTaxes = valueAfterDiscount + vatAmount; // Precio final con IVA
+
+            System.out.println("Artículo: " + article);
+            System.out.println("Precio base: " + value + "€");
+            System.out.println("Descuento aplicado: " + (discountAmount) + "€");
+            System.out.println("Importe con IVA: " + afterTaxes + "€");
         }
 
         public static void ejercicio10() { //------------------------------------------------
