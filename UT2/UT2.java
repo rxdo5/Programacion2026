@@ -22,17 +22,17 @@ public class UT2 {
 
         public static void ejercicio4() { //------------------------------------------------
             // Calcular la nota media
-            double nota1 = 7.8;
-            double nota2 = 4.7;
-            double nota3 = 5.6;
-            double media = (nota1 + nota2 + nota3) / 3;
-            double mediaRedondeada = Math.round(media);
+            double grade1 = 7.8;
+            double grade2 = 4.7;
+            double grade3 = 5.6;
+            double average = (grade1 + grade2 + grade3) / 3;
+            double averageRounded = Math.round(average);
             
-            System.out.println("Nota de la 1 evaluación: " + nota1);
-            System.out.println("Nota de la 2 evaluación: " + nota2);
-            System.out.println("Nota de la 3 evaluación: " + nota3);
-            System.out.println("La nota media del alumno es: "+ media);
-            System.out.println("La nota media redondeada: " + mediaRedondeada);
+            System.out.println("Nota de la 1 evaluación: " + grade1);
+            System.out.println("Nota de la 2 evaluación: " + grade2);
+            System.out.println("Nota de la 3 evaluación: " + grade3);
+            System.out.println("La nota media del alumno es: "+ average);
+            System.out.println("La nota media redondeada: " + averageRounded);
         }
 
         public static void ejercicio5() { //------------------------------------------------
@@ -160,7 +160,7 @@ public class UT2 {
                 System.out.println("El nombre completo introducido es " + nameLine + ".");
                     // System.out.println("El nombre único introducido es " + nameSpace + "."); //incase you only want to display first word or till next space
 
-                } //close scanner
+                } //autoclose scanner
         }
 
         public static void ejercicio17() { //------------------------------------------------
@@ -179,7 +179,7 @@ public class UT2 {
         		System.out.println("El Perímetro es de: " + p + " unidades");
         		System.out.println("El Área es de: " + a + " unidades");
 
-                } //close scanner
+                } //autoclose scanner
         }
 
         public static void ejercicio18() { //------------------------------------------------
@@ -192,7 +192,7 @@ public class UT2 {
         		System.out.println(" El perimetro del circulo es " + (2 * Math.PI * r));
         		System.out.println(" El area del circulo es " + (Math.PI * (r * r)));
 
-                } //close scanner
+                } //autoclose scanner
         }
 
         public static void ejercicio19() { //------------------------------------------------
@@ -206,7 +206,7 @@ public class UT2 {
                 System.out.println("Las ganancias serán: "+ winnings +".");
                 System.out.println("El saldo final será de: "+ (deposit + winnings) +".");
                 
-                } //close scanner
+                } //autoclose scanner
         }
 
 }
