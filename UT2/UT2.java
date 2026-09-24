@@ -102,21 +102,41 @@ public class UT2 {
             System.out.println("Importe con IVA: " + afterTaxes + "€");
         }
 
-        public static void ejercicio10() { //------------------------------------------------
-            
-        }
-
         public static void ejercicio11() { //------------------------------------------------
-            
+            //Muestra el resultado de cada una de las siguientes expresiones lógicas (booleanas)
+            int x = 1; // que valor debería ser x?
+
+            boolean a = (true) && (3 > 4);
+            boolean b = (true) && (x > 4);
+            boolean c = !(x > 0) && (x > 0);
+            boolean d = (x > 0) || (x < 0);
+            boolean e = (x != 0) || (x == 0);
+            boolean f = (x >= 0) || (x < 0);
+           // boolean g = (x != 1) == !(x = 1); no resulta posible
+
+            System.out.println("Resultado de (true) && (3 > 4): " + a);
+            System.out.println("Resultado de (true) && (x > 4): " + b);
+            System.out.println("Resultado de !(x > 0) && (x > 0): " + c);
+            System.out.println("Resultado de (x > 0) || (x < 0  ): " + d);
+            System.out.println("Resultado de (x != 0) || (x == 0): " + e);
+            System.out.println("Resultado de (x >= 0) || (x < 0): " + f);
         }
 
         public static void ejercicio12() { //------------------------------------------------
-            
+            String grades = "Sobresaliente, Notable, Bien, Suficiente, Insuficiente";
+            String months = "Enero, Febrero, Marzo";
+            String civilStatus = "Soltero, Casado, Divorciado, Viudo";
+            String musicalNotes = "Do, Re, Mi, Fa, Sol, La, Si";
+
+            System.out.println("Calificaciones: " + grades);
+            System.out.println("Meses: " + months);
+            System.out.println("Estado civil: " + civilStatus);
+            System.out.println("Notas musicales: " + musicalNotes);
         }
 
         public static void ejercicio13() { //------------------------------------------------
-            int f = 100;
-            double c = (5.0 / 9.0) * (f - 32);
+            double f = 100.0;
+            double c = (5.0 / 9.0) * (f - 32.0);
     
             System.out.println(f + "º farenheit en celsius son " + c + "º");
         }
