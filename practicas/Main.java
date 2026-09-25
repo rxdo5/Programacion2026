@@ -1,9 +1,10 @@
-package ut2;
+package practicas;
 
 public class Main {
+
     public static void main(String[] args) {
 
-       //ut2.ejercicio20();
+        practicas.practica4();
 
     }
 }

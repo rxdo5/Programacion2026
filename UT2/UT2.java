@@ -1,3 +1,5 @@
+package ut2;
+
 import java.util.Scanner;
 
 public class ut2 {
