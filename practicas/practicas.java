@@ -26,6 +26,7 @@ public class practicas {
     }
 
     public static void practica2() { //------------------------------------------------
+        // Suma, resta, multiplicación y división
         try(Scanner sc=new Scanner(System.in)){
 
             System.out.println("Introduce el primer número entero: ");
@@ -39,11 +40,11 @@ public class practicas {
             System.out.println("La multiplicación de " + num1 + " y " + num2 + " es: " + (num1 * num2));
             System.out.println("La división de " + num1 + " y " + num2 + " es: " + (num1 / num2));
 
-        } 
+        } //autoclose scanner
     }
 
     public static void practica3() { //------------------------------------------------
-
+        // Segundos a horas, minutos y segundos
         try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Introduzca una gran cantidad de segundos: ");
@@ -55,12 +56,12 @@ public class practicas {
 
             System.out.println("El tiempo es: " + hours + " horas, " + minutes + " minutos y " + remainingSeconds + " segundos.");
 
-        }
+        } //autoclose scanner
 
     }
 
     public static void practica4() { //------------------------------------------------
-
+        // Menor o mayor de edad
         try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Introduzca su edad: ");
@@ -79,15 +80,111 @@ public class practicas {
                 System.exit(1);
             } // Cierre del else del primer if
 
-        }
+        } //autoclose scanner
 
     }
 
     public static void practica5() { //------------------------------------------------
+        //Cero, positivo o negativo.
+        try (Scanner sc = new Scanner(System.in)) {
 
+            System.out.println("Introduzca un número entero: ");
+            int num = sc.nextInt();
+
+            if (num == 0) { // Primer if, para comprobar si es cero
+                
+                System.out.println("El número " + num + " es cero.");
+
+            } else { // Si no es cero, se comprueba si es positivo o negativo
+               if (num > 0) {
+                    System.out.println("El número " + num + " es positivo.");
+                } else {
+                    System.out.println("El número " + num + " es negativo.");
+                } // Cierre del segundo if
+               
+            } // Cierre del primer if
+
+        } //autoclose scanner
     }
 
     public static void practica6() { //------------------------------------------------
+        //Par o impar.
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Introduzca un número entero: ");
+            int num = sc.nextInt();
+
+            if (num % 2 == 0) { // Primer if, para comprobar si es par
+                
+                System.out.println("El número " + num + " es par.");
+
+            } else { // Si no es par, es impar
+                System.out.println("El número " + num + " es impar.");
+            } // Cierre del primer if
+
+        } //autoclose scanner
+    }
+
+    public static void practica7() { //------------------------------------------------
+        // mayor o igual
+        try (Scanner sc=new Scanner(System.in)) {
+
+            System.out.println("Introduzca el primer número entero: ");
+            int num1 = sc.nextInt();
+            
+            System.out.println("Introduzca el segundo número entero: ");
+            int num2 =sc.nextInt();
+
+            if (num1 == num2) {
+                System.out.println("El número  "+num1+" es igual que el número "+num2+".");
+            }else{
+
+                if (num1 > num2) {
+                    System.out.println("El número  "+num1+" es mayor que el número "+num2+".");
+                } else {
+                System.out.println("El número  "+num2+" es mayor que el número "+num1+".");
+                }
+
+            }
+
+        } //autoclose scanner
+    }
+
+    public static void practica8() { //------------------------------------------------
+        // Nota alumno. 0.0-4.9 suspenso, 5.0-5.9 suficiente, 6.0-6.9 bien, 7.0-8.9 notable, 9.0-9.9 sobresaliente y 10 matricula de honor, mas de 10 error
+        try(Scanner sc=new Scanner(System.in)){
+
+            System.out.println("Introduzca la nota del alumno: ");
+            double grade = sc.nextDouble();
+
+            if (grade >= 0.0 && grade <= 10.0) {
+
+                if (grade < 5.0) {
+                    System.out.println("El alumno esta suspenso.");
+                } else  if (grade < 6.0) {
+                        System.out.println("El alumno tiene un suficiente.");
+                    } else if (grade < 7.0) {
+                            System.out.println("El alumno tiene un bien.");
+                        } else  if (grade < 9.0) {
+                                System.out.println("El alumno tiene un notable.");
+                            } else if (grade < 10.0) {
+                                    System.out.println("El alumno tiene un sobresaliente.");
+                                } else  if (grade == 10.0) {
+                                        System.out.println("El alumno tiene matricula de honor.");
+                                    };
+
+            } else {
+                System.out.println("La nota debe estar entre 0 y 10.");
+            }
+
+        } //autoclose scanner
+    }
+
+    public static void practica9() { //------------------------------------------------
+        // Bloque 3 Ejercicio 32  Operador ternario y switch
+    }
+
+    public static void practica10() { //------------------------------------------------
 
     }
 
