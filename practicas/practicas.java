@@ -240,17 +240,90 @@ public class practicas {
 
     public static void practica12(Scanner sc){ //------------------------------------------------
 
+        System.out.println("Introduce el primer número:");
+        double num1 = sc.nextDouble();
+        System.out.println("Introduce el segundo número:");
+        double num2 = sc.nextDouble();
 
+        System.out.println("------------- MENÚ -------------\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Resto\n6. Salir");
+        int option=sc.nextInt();
+
+            switch (option) {
+                case 1:
+                    System.out.println("La suma de los números "+num1+" y "+num2+" da un resultado de: "+(num1+num2));
+                    break;
+            
+                case 2:
+                    System.out.println("La resta de los números "+num1+" y "+num2+" da un resultado de: "+(num1-num2));
+                    break;
+
+                case 3:
+                    System.out.println("La multiplicación de los números "+num1+" y "+num2+" da un resultado de: "+(num1*num2));
+                    break;
+
+                case 4:
+                    System.out.println("La división de los números "+num1+" y "+num2+" da un resultado de: "+(num1/num2));
+                    break;
+
+                case 5:
+                    System.out.println("El resto de la división de los números "+num1+" y "+num2+" da un resultado de: "+(num1%num2));
+                    break;
+
+                case 6:
+                    System.out.println("Hasta luego, usuario.");
+                    break;
+
+            }
         
+    }
+
+    public static void practica12redundancia(Scanner sc){ //------------------------------------------------
+
+        // Ejercicio 12 intentando reducir redundancia, ayuda con IA (explicatorio)
+        System.out.println("Introduce el primer número:");
+        double num1 = sc.nextDouble();
+        System.out.println("Introduce el segundo número:");
+        double num2 = sc.nextDouble();
+
+        System.out.println("------------- MENÚ -------------\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Resto\n6. Salir");
+        int option=sc.nextInt();
+
+        if (option == 6) { // Sale si el usuario desea salir
+            System.out.println("Hasta luego, usuario.");
+        return;
+        }
+
+        String operacion = switch (option) { // segun la opcion que haya elegido, este switch que opera sobre la var operacion con el input de la var option, elegirá el texto que se muestra al final, en el resultado.
+        case 1 -> "suma";
+        case 2 -> "resta";
+        case 3 -> "multiplicación";
+        case 4 -> "división";
+        case 5 -> "resto de la división";
+        default -> null;
+    };
+
+    if (operacion != null) { // Si la var operación no es null; es decir, se ha seleccionado correctamente, este switch opera sobre la var result, con el input de la var option
+        double result = switch (option) {
+            case 1 -> num1 + num2;
+            case 2 -> num1 - num2;
+            case 3 -> num1 * num2;
+            case 4 -> num1 / num2;
+            case 5 -> num1 % num2;
+            default -> 0;
+        };
+
+        System.out.println("La "+operacion+" de los números "+num1+" y "+num2+" da un resultado de "+result+".");
+
+        //System.out.printf("La %s de los números %.2f y %.2f da un resultado de: %.2f%n", 
+        //                  operacion, num1, num2, result);
+
+    } else {
+        System.out.println("Opción no válida."); // Control de errores, al elegir un número que no se asigna en la var operacion, el valor de esta sigue siendo null, no entra en el if, y el else la saca mostrando mensaje.
+    }
+
     }
 
     public static void practica13(Scanner sc){ //------------------------------------------------
-
-
-        
-    }
-
-    public static void practica14(Scanner sc){ //------------------------------------------------
 
 
         
