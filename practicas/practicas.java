@@ -293,7 +293,7 @@ public class practicas {
         return;
         }
 
-        String operacion = switch (option) { // segun la opcion que haya elegido, este switch que opera sobre la var operacion con el input de la var option, elegirá el texto que se muestra al final, en el resultado.
+        String operation = switch (option) { // segun la opcion que haya elegido, este switch que opera sobre la var operacion con el input de la var option, elegirá el texto que se muestra al final, en el resultado.
         case 1 -> "suma";
         case 2 -> "resta";
         case 3 -> "multiplicación";
@@ -302,7 +302,7 @@ public class practicas {
         default -> null;
     };
 
-    if (operacion != null) { // Si la var operación no es null; es decir, se ha seleccionado correctamente, este switch opera sobre la var result, con el input de la var option
+    if (operation != null) { // Si la var operación no es null; es decir, se ha seleccionado correctamente, este switch opera sobre la var result, con el input de la var option
         double result = switch (option) {
             case 1 -> num1 + num2;
             case 2 -> num1 - num2;
@@ -312,7 +312,7 @@ public class practicas {
             default -> 0;
         };
 
-        System.out.println("La "+operacion+" de los números "+num1+" y "+num2+" da un resultado de "+result+".");
+        System.out.println("La "+operation+" de los números "+num1+" y "+num2+" da un resultado de "+result+".");
 
         //System.out.printf("La %s de los números %.2f y %.2f da un resultado de: %.2f%n", 
         //                  operacion, num1, num2, result);
@@ -323,7 +323,21 @@ public class practicas {
 
     }
 
-    public static void practica13(Scanner sc){ //------------------------------------------------
+    public static void practica13(){ //------------------------------------------------
+
+        for (int i = 0;i <= 10;i++) { // para i = 0, mientras i sea menor o igual a 10, sumar una unidad a 1 por cada instancia del bucle.
+                System.out.println(i); // Muestra cada intancia del bucle hasta que i deje de ser menor o igual a 10.
+            }
+        
+    }
+
+    public static void practica14(Scanner sc){ //------------------------------------------------
+
+
+        
+    }
+
+    public static void practica15(Scanner sc){ //------------------------------------------------
 
 
         
