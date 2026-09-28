@@ -187,8 +187,7 @@ public class ut2 {
 
         }
 
-        public static void explicacionScanner() { //------------------------------------------------
-            try(Scanner sc = new Scanner(System.in)) {
+        public static void explicacionScanner(Scanner sc) { //------------------------------------------------
 
                 //num1
                 System.out.println("Introduce el primer número (Debe ser entero):");
@@ -214,12 +213,10 @@ public class ut2 {
                 System.out.println("El nombre completo introducido es " + nameLine + ".");
                     // System.out.println("El nombre único introducido es " + nameSpace + "."); //incase you only want to display first word or till next space
 
-            } //autoclose scanner
         }
 
-        public static void ejercicio17() { //------------------------------------------------
+        public static void ejercicio17(Scanner sc) { //------------------------------------------------
             // Ejercicio 5 con Scanner
-            try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Vamos a calcular el perímetro y área de un rectángulo o cuadrado.\nIntroduce la altura que tendrá:");
                 int h = sc.nextInt();
@@ -234,12 +231,10 @@ public class ut2 {
         		System.out.println("El Perímetro es de: " + p + " unidades");
         		System.out.println("El Área es de: " + a + " unidades");
 
-            } //autoclose scanner
         }
 
-        public static void ejercicio18() { //------------------------------------------------
+        public static void ejercicio18(Scanner sc) { //------------------------------------------------
             // Ejercicio 6 con Scanner
-            try(Scanner sc = new Scanner(System.in)) {      
 
                 System.out.println("Vamos a calcular el perímetro y área de un círculo.\nIntroduce el radio que tendrá:");
                 int r = sc.nextInt();
@@ -248,12 +243,10 @@ public class ut2 {
         		System.out.println(" El perimetro del circulo es " + (2 * Math.PI * r));
         		System.out.println(" El area del circulo es " + (Math.PI * (r * r)));
 
-            } //autoclose scanner
         }
 
-        public static void ejercicio19() { //------------------------------------------------
+        public static void ejercicio19(Scanner sc) { //------------------------------------------------
             //Escriba un programa que visualice los intereses que pagará un banco después de 12 meses si tenemos una cuenta a plazo fijo al 1,5% anual y la cantidad la introduce el usuario por teclado.
-            try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE");
                 double deposit = sc.nextDouble();
@@ -262,13 +255,11 @@ public class ut2 {
             
                 System.out.println("Los intereses generados serán: "+ interest +".");
                 System.out.println("El saldo final será de: "+ (deposit + interest) +".");
-                
-            } //autoclose scanner
+
         }
 
-        public static void ejercicio20() { //------------------------------------------------
+        public static void ejercicio20(Scanner sc) { //------------------------------------------------
                 //Modifique el programa anterior teniendo en cuenta que a los intereses abonados se les aplica una retención del 20% sobre los intereses .
-            try(Scanner sc = new Scanner(System.in)) {
 
                 System.out.println("Introduce el capital a ingresar al 1,5% TAE con una retención del 20%");
                 double deposit = sc.nextDouble();
@@ -280,8 +271,7 @@ public class ut2 {
                 System.out.println("Con una retención de: "+ retention +".");
                 System.out.println("Dando una suma de: "+ (interest - retention) +".");
                 System.out.println("El saldo final será de: "+ (deposit + interest - retention) +".");
-                
-            } //autoclose scanner
+
         }
 
 }

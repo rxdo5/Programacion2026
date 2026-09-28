@@ -1,9 +1,15 @@
 package ut2;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-       //ut2.ejercicio20();
+        try(Scanner sc=new Scanner(System.in)) {
+
+            ut2.ejercicio20(sc);
+
+       }
 
     }
 }
