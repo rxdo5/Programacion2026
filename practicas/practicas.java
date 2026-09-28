@@ -176,7 +176,7 @@ public class practicas {
 
     public static void practica10(Scanner sc) { //------------------------------------------------
         //Switch
-        
+
         System.out.println("Introduzca el número del día de la semana:");
         int day = sc.nextInt();
 
@@ -210,25 +210,47 @@ public class practicas {
 
     }
 
-    public static void practica11(Scanner sc){
+    public static void practica11(Scanner sc){ //------------------------------------------------
 
+        System.out.println("------------- MENÚ -------------\n1. Saludar\n2. Mostrar un mensaje\n3. Despedirse\n4. Salir");
+        int option=sc.nextInt();
 
+        if (option >0 && option <=4) { // Control de errores
+
+            switch (option) {
+                case 1:
+                    System.out.println("Buenos días, usuario.");
+                    break;
+            
+                case 2:
+                    System.out.println("Mostrando mensaje por pantalla.");
+                    break;
+
+                case 3:
+                    System.out.println("Hasta luego, usuario.");
+                    break;
+
+                case 4:
+                    break;
+            }
+
+        } else {System.out.println("Has de introducir una opción válida.");}
 
     }
 
-    public static void practica12(Scanner sc){
+    public static void practica12(Scanner sc){ //------------------------------------------------
 
 
         
     }
 
-    public static void practica13(Scanner sc){
+    public static void practica13(Scanner sc){ //------------------------------------------------
 
 
         
     }
 
-    public static void practica14(Scanner sc){
+    public static void practica14(Scanner sc){ //------------------------------------------------
 
 
         
