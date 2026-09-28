@@ -182,9 +182,65 @@ public class practicas {
 
     public static void practica9() { //------------------------------------------------
         // Bloque 3 Ejercicio 32  Operador ternario y switch
+
+        boolean overage = false;
+        try(Scanner sc=new Scanner(System.in)) {
+
+            System.out.println("Introduzca su edad: ");
+            int age = sc.nextInt();
+
+
+            if (age > 0 && age <= 120) {
+
+                if (age>=18) {
+                    overage = true;
+                } else {
+                    overage = false;
+                }
+
+            }  else {
+                System.out.println("Introduzca una edad correcta.");
+            }
+
+
+            System.out.println("¿Es el usuario mayor de edad? "+ overage);
+
+        }
+
     }
 
-    public static void practica10() { //------------------------------------------------
+    public static void practica10(Scanner sc) { //------------------------------------------------
+
+        System.out.println("Introduzca el número del día de la semana:");
+        int day = sc.nextInt();
+
+        if (day>0 && day<=7 ) {
+
+            switch (day) {
+                case 1:
+                    System.out.println("Es lunes");
+                    break;
+                case 2:
+                    System.out.println("Es martes");
+                    break;
+                case 3:
+                    System.out.println("Es miércoles");
+                    break;
+                case 4:
+                    System.out.println("Es jueves");
+                    break;
+                case 5:
+                    System.out.println("Es viernes");
+                    break;
+                case 6:
+                    System.out.println("Es sábado");
+                    break;
+                case 7:
+                    System.out.println("Es domingo");
+                    break;
+            }
+
+        } else { System.out.println("Introduzca un número entre el 1 y el 7."); }
 
     }
 

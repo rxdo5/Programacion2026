@@ -1,10 +1,16 @@
 package practicas;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        practicas.practica8();
+        try(Scanner sc=new Scanner(System.in)) {
+
+            practicas.practica10(sc);
+
+        }
 
     }
 }
