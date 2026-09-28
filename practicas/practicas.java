@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 public class practicas {
 
-    public static void practica1() { //------------------------------------------------
+    public static void practica1(Scanner sc) { //------------------------------------------------
         //Recopilación datos personales
-        try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Hola, introduzca su nombre: ");
             String nameString = sc.nextLine();
@@ -21,13 +20,10 @@ public class practicas {
 
             System.out.println("Hola, " + nameString + ". tienes " + age + " años y vives en " + city + ".");
 
-        } //autoclose scanner
-
     }
 
-    public static void practica2() { //------------------------------------------------
+    public static void practica2(Scanner sc) { //------------------------------------------------
         // Suma, resta, multiplicación y división
-        try(Scanner sc=new Scanner(System.in)){
 
             System.out.println("Introduce el primer número entero: ");
             int num1 = sc.nextInt();
@@ -40,12 +36,10 @@ public class practicas {
             System.out.println("La multiplicación de " + num1 + " y " + num2 + " es: " + (num1 * num2));
             System.out.println("La división de " + num1 + " y " + num2 + " es: " + (num1 / num2));
 
-        } //autoclose scanner
     }
 
-    public static void practica3() { //------------------------------------------------
+    public static void practica3(Scanner sc) { //------------------------------------------------
         // Segundos a horas, minutos y segundos
-        try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Introduzca una gran cantidad de segundos: ");
             int seconds = sc.nextInt();
@@ -56,13 +50,10 @@ public class practicas {
 
             System.out.println("El tiempo es: " + hours + " horas, " + minutes + " minutos y " + remainingSeconds + " segundos.");
 
-        } //autoclose scanner
-
     }
 
-    public static void practica4() { //------------------------------------------------
+    public static void practica4(Scanner sc) { //------------------------------------------------
         // Menor o mayor de edad
-        try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Introduzca su edad: ");
             int age = sc.nextInt();
@@ -80,13 +71,10 @@ public class practicas {
                 System.exit(1);
             } // Cierre del else del primer if
 
-        } //autoclose scanner
-
     }
 
-    public static void practica5() { //------------------------------------------------
+    public static void practica5(Scanner sc) { //------------------------------------------------
         //Cero, positivo o negativo.
-        try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Introduzca un número entero: ");
             int num = sc.nextInt();
@@ -104,12 +92,10 @@ public class practicas {
                
             } // Cierre del primer if
 
-        } //autoclose scanner
     }
 
-    public static void practica6() { //------------------------------------------------
+    public static void practica6(Scanner sc) { //------------------------------------------------
         //Par o impar.
-        try (Scanner sc = new Scanner(System.in)) {
 
             System.out.println("Introduzca un número entero: ");
             int num = sc.nextInt();
@@ -122,12 +108,10 @@ public class practicas {
                 System.out.println("El número " + num + " es impar.");
             } // Cierre del primer if
 
-        } //autoclose scanner
     }
 
-    public static void practica7() { //------------------------------------------------
+    public static void practica7(Scanner sc) { //------------------------------------------------
         // mayor o igual
-        try (Scanner sc=new Scanner(System.in)) {
 
             System.out.println("Introduzca el primer número entero: ");
             int num1 = sc.nextInt();
@@ -147,12 +131,10 @@ public class practicas {
 
             }
 
-        } //autoclose scanner
     }
 
-    public static void practica8() { //------------------------------------------------
+    public static void practica8(Scanner sc) { //------------------------------------------------
         // Nota alumno. 0.0-4.9 suspenso, 5.0-5.9 suficiente, 6.0-6.9 bien, 7.0-8.9 notable, 9.0-9.9 sobresaliente y 10 matricula de honor, mas de 10 error
-        try(Scanner sc=new Scanner(System.in)){
 
             System.out.println("Introduzca la nota del alumno: ");
             double grade = sc.nextDouble();
@@ -177,14 +159,12 @@ public class practicas {
                 System.out.println("La nota debe estar entre 0 y 10.");
             }
 
-        } //autoclose scanner
     }
 
-    public static void practica9() { //------------------------------------------------
+    public static void practica9(Scanner sc) { //------------------------------------------------
         // Bloque 3 Ejercicio 32  Operador ternario y switch
 
         boolean overage = false;
-        try(Scanner sc=new Scanner(System.in)) {
 
             System.out.println("Introduzca su edad: ");
             int age = sc.nextInt();
@@ -204,8 +184,6 @@ public class practicas {
 
 
             System.out.println("¿Es el usuario mayor de edad? "+ overage);
-
-        }
 
     }
 
