@@ -325,23 +325,37 @@ public class practicas {
 
     public static void practica13(){ //------------------------------------------------
 
-        for (int i = 0;i <= 10;i++) { // para i = 0, mientras i sea menor o igual a 10, sumar una unidad a 1 por cada instancia del bucle.
+        for (int i = 0;i <= 10;i++) { // para i = 0, mientras i sea menor o igual a 10, sumar una unidad a i por cada instancia del bucle.
                 System.out.println(i); // Muestra cada intancia del bucle hasta que i deje de ser menor o igual a 10.
             }
         
     }
 
-    public static void practica14(Scanner sc){ //------------------------------------------------
+    public static void practica14(){ //------------------------------------------------
 
-
+        for (int i = 10;i >= 0;i--) { // para i = 10, mientras i sea mayor o igual a 10, restar una unidad a i por cada instancia del bucle.
+                System.out.println(i); // Muestra cada intancia del bucle hasta que i deje de ser mayor o igual a 10.
+            }
         
     }
 
     public static void practica15(Scanner sc){ //------------------------------------------------
 
+        System.out.println("Introduzca un número para visualizar su tabla de multiplicación: ");
+        int num=sc.nextInt();
 
+        for (int i = 0;i<=10;i++) {
+            System.out.println(num+" * "+i+" = "+(num*i));
+        }
         
     }
+
+    public static void practica16(Scanner sc){ //------------------------------------------------
+
+        
+        
+    }
+
 
 
 
