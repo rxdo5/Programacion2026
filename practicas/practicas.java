@@ -325,7 +325,7 @@ public class practicas {
 
     public static void practica13(){ //------------------------------------------------
 
-        for (int i = 0;i <= 10;i++) { // para i = 0, mientras i sea menor o igual a 10, sumar una unidad a i por cada instancia del bucle.
+        for (int i=0;i<=10;i++) { // para i = 0, mientras i sea menor o igual a 10, sumar una unidad a i por cada instancia del bucle.
                 System.out.println(i); // Muestra cada intancia del bucle hasta que i deje de ser menor o igual a 10.
             }
         
@@ -333,7 +333,7 @@ public class practicas {
 
     public static void practica14(){ //------------------------------------------------
 
-        for (int i = 10;i >= 0;i--) { // para i = 10, mientras i sea mayor o igual a 10, restar una unidad a i por cada instancia del bucle.
+        for (int i=10;i>=0;i--) { // para i = 10, mientras i sea mayor o igual a 10, restar una unidad a i por cada instancia del bucle.
                 System.out.println(i); // Muestra cada intancia del bucle hasta que i deje de ser mayor o igual a 10.
             }
         
@@ -344,13 +344,59 @@ public class practicas {
         System.out.println("Introduzca un número para visualizar su tabla de multiplicación: ");
         int num=sc.nextInt();
 
-        for (int i = 0;i<=10;i++) {
+        for (int i=0;i<=10;i++) {
             System.out.println(num+" * "+i+" = "+(num*i));
         }
         
     }
 
-    public static void practica16(Scanner sc){ //------------------------------------------------
+    public static void practica16(){ //------------------------------------------------
+
+        int addition=0;
+
+        for (int i=0;i <= 100;i++) { 
+        addition = addition + i;
+        }
+
+        System.out.println("La suma de todos los números del 1 al 100 es "+addition);
+        
+    }
+
+    public static void practica17(){ //------------------------------------------------
+
+        int count=0;
+
+        for (int i=1;i<=50;i++) {
+
+            if(i%2==0) {
+                System.out.println(i);
+                count++;
+            }
+
+        }
+
+        System.out.println("Hay "+count+" números pares entre el 1 y el 50.");
+        
+    }
+
+    public static void practica18(Scanner sc){ //------------------------------------------------
+
+        System.out.println("Introduce el número base (Double):");
+        double base=sc.nextDouble();
+        System.out.println("Introduce a que número lo quieres elevar (Int):");
+        int exp=sc.nextInt();
+        
+        double result=1.0; // No lo entiendo muy bien, pero es 1, al empezar y haga 1*base se convierte ya en el valor base y sigue, asi i puede ser =1
+
+        for(int i=1;i<=exp;i++){
+            result=result*base;
+        }
+
+        System.out.println(result);
+
+    }
+
+    public static void practica19(Scanner sc){ //------------------------------------------------
 
         
         
