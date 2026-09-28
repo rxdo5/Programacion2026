@@ -162,33 +162,21 @@ public class practicas {
     }
 
     public static void practica9(Scanner sc) { //------------------------------------------------
-        // Bloque 3 Ejercicio 32  Operador ternario y switch
+        // Pide la edad y guarda en un String el texto "Mayor de edad" o "Menor de edad" utilizando el operador ternario ?:. Después muéstralo
 
-        boolean overage = false;
+        String message;
 
-            System.out.println("Introduzca su edad: ");
-            int age = sc.nextInt();
+        System.out.println("Introduzca su edad: ");
+        int age = sc.nextInt();
 
-
-            if (age > 0 && age <= 120) {
-
-                if (age>=18) {
-                    overage = true;
-                } else {
-                    overage = false;
-                }
-
-            }  else {
-                System.out.println("Introduzca una edad correcta.");
-            }
-
-
-            System.out.println("¿Es el usuario mayor de edad? "+ overage);
+        message = (age >= 18) ? "Mayor de edad" : "Menor de edad";
+        System.out.println(message);
 
     }
 
     public static void practica10(Scanner sc) { //------------------------------------------------
-
+        //Switch
+        
         System.out.println("Introduzca el número del día de la semana:");
         int day = sc.nextInt();
 
@@ -221,6 +209,31 @@ public class practicas {
         } else { System.out.println("Introduzca un número entre el 1 y el 7."); }
 
     }
+
+    public static void practica11(Scanner sc){
+
+
+
+    }
+
+    public static void practica12(Scanner sc){
+
+
+        
+    }
+
+    public static void practica13(Scanner sc){
+
+
+        
+    }
+
+    public static void practica14(Scanner sc){
+
+
+        
+    }
+
 
 
 }
