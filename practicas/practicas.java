@@ -398,6 +398,47 @@ public class practicas {
 
     public static void practica19(Scanner sc){ //------------------------------------------------
 
+        System.out.println("Introduzca su contraseña: ");
+        String password=sc.next();
+
+        for (int i=1;i<=3;i++) {
+            
+            System.out.println("Intento "+i+". Introduzca su contraseña:");
+            String input=sc.next();
+
+            if (input.equals(password)) { // para comparar strings no se usa ==; se usa var1.equals(var2)
+
+                System.out.println("Bienvenido, usuario.");
+                break;
+
+            } else { System.out.println("Intento "+i+" fallido."); }
+
+        }
+        
+    }
+
+    public static void practica20(Scanner sc){ //------------------------------------------------
+
+        int input=0, i=-1;
+
+        while (input>=0) {
+            System.out.println("Introduzca un número: ");
+            input=sc.nextInt();
+            i++;
+        }
+
+        System.out.println("El usuario ha introducido "+i+" números enteros positivos antes de introducir uno negativo.");
+        
+    }
+
+    public static void practica21(Scanner sc){ //------------------------------------------------
+
+        
+        
+    }
+
+    public static void practica22(Scanner sc){ //------------------------------------------------
+
         
         
     }

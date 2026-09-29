@@ -8,7 +8,7 @@ public class Main {
 
         try(Scanner sc=new Scanner(System.in)) {
 
-            practicas.practica18(sc);
+            practicas.practica20(sc);
 
         }
 
