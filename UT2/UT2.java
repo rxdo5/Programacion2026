@@ -273,5 +273,18 @@ public class ut2 {
             System.out.println("El saldo final será de: "+ (deposit + interest - retention) +".");
 
         }
+        
+        public static void ejercicio21(Scanner sc) { //------------------------------------------------
+			
+			System.out.println("Introduce un número de segundos: ");
+			int secondsInput = sc.nextInt();
+			
+			int seconds = seconds%60
+			int minutes = seconds/60
+			int hours = seconds/3600
+			
+			System.out.println("Hay "+hours+" horas, "+mminutes+" minutos y "+seconds+" segundos.");
+			
+		}
 
 }
