@@ -303,5 +303,16 @@ public class ut2 {
 			System.out.println("Hay "+seconds+" segundos.");
 			
 		}
+		
+		public static void ejercicio23(Scanner sc) {
+			
+			System.out.println("Introduce un dia del mes: ");
+			int monthDay = sc.nextInt();
+	
+			int hours = monthDay*24;
+	
+			System.out.println("Han pasado "+hours+" h desde que empezo el mes");
+			
+		}
 
 }
