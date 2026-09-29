@@ -314,5 +314,32 @@ public class ut2 {
 			System.out.println("Han pasado "+hours+" h desde que empezo el mes");
 			
 		}
+		
+		public static void ejercicio24(Scanner sc) { //------------------------------------------------
+			
+			System.out.println("Introduce el primer dia: ");
+			int firstDay = sc.nextInt();
+			System.out.println("Introduce el primer mes: ");
+			int firstMonth = sc.nextInt();
+			System.out.println("Introduce el primer año: ");
+			int firstYear = sc.nextInt();
+			
+			//---------------SEGUNDA FECHA-------------------
+			
+			System.out.println("Introduce el segundo dia: ");
+			int secondDay = sc.nextInt();
+			System.out.println("Introduce el segundo mes: ");
+			int secondMonth = sc.nextInt();
+			System.out.println("Introduce el segundo año: ");
+			int secondYear = sc.nextInt();
+			
+			int firstValue = firstDay+(firstMonth*30)+(firstYear*365);
+			int secondValue = secondDay+(secondMonth*30)+(secondYear*365);
+			
+			int daysBetween = secondValue-firstValue;
+			
+			System.out.println("Entre las dos fechas hay "+daysBetween+" días.");
+			
+		}
 
 }
