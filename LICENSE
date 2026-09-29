@@ -1,0 +1,54 @@
+PROPRIETARY SOFTWARE LICENSE
+Copyright (c) 2026 Ricardo Arroyo
+
+1. OWNERSHIP
+
+All source code, files, documentation, examples and other original material
+contained in this repository ("the Work") are the property of Ricardo Arroyo,
+except where otherwise stated.
+
+2. VIEWING
+
+The Work is made publicly available for the sole purpose of allowing people
+to view and inspect the repository and its contents.
+
+3. NO LICENSE TO REUSE
+
+No permission is granted to copy, reproduce, modify, adapt, translate,
+distribute, publish, sublicense, sell, incorporate, or create derivative
+works from the Work, in whole or in part.
+
+In particular, you may not:
+
+- Copy the source code into another project.
+- Submit the code, or modified versions of it, as your own work.
+- Redistribute the code or modified versions of it.
+- Use the code in a public or private project without written permission.
+- Re-upload, mirror, or republish substantial portions of the code elsewhere.
+
+4. EDUCATIONAL VIEWING
+
+Viewing the source code for personal learning and study is permitted.
+This permission does not include copying or reusing the code.
+
+5. EXCEPTIONS
+
+Any permission beyond viewing must be obtained explicitly from Ricardo Arroyo
+in writing.
+
+6. THIRD-PARTY MATERIAL
+
+This license applies only to material owned by Ricardo Arroyo. Third-party
+libraries, dependencies, trademarks, or other material included in the
+repository remain subject to their respective licenses and terms.
+
+7. NO WARRANTY
+
+The Work is provided "as is", without warranty of any kind, to the maximum
+extent permitted by applicable law.
+
+8. RESERVATION OF RIGHTS
+
+All rights not expressly granted by this notice are reserved.
+
+Contact the repository owner for permission requests.
