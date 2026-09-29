@@ -279,11 +279,28 @@ public class ut2 {
 			System.out.println("Introduce un número de segundos: ");
 			int secondsInput = sc.nextInt();
 			
-			int seconds = seconds%60
-			int minutes = seconds/60
-			int hours = seconds/3600
+			int seconds = (secondsInput%3600)%60;
+			int minutes = (secondsInput%3600)/60;
+			int hours = secondsInput/3600;
+					
+			System.out.println("Hay "+hours+" horas, "+minutes+" minutos y "+seconds+" segundos.");
 			
-			System.out.println("Hay "+hours+" horas, "+mminutes+" minutos y "+seconds+" segundos.");
+		}
+        
+        public static void ejercicio22(Scanner sc) { //------------------------------------------------
+			
+			System.out.println("Introduce un número de días: ");
+			int daysInput = sc.nextInt();
+			
+			System.out.println("Introduce un número de horas: ");
+			int hoursInput = sc.nextInt();
+			
+			System.out.println("Introduce un número de minutos: ");
+			int minutesInput = sc.nextInt();
+					
+			int seconds = ((daysInput*24)*3600)+(hoursInput*3600)+(minutesInput*60);
+			
+			System.out.println("Hay "+seconds+" segundos.");
 			
 		}
 
