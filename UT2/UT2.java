@@ -366,6 +366,18 @@ public class ut2 {
 		
 		public static void ejercicio26() { //------------------------------------------------
 			
+			System.out.println("Se va a lanzar un dado...");
+	
+			double numero = Math.random() * 6 + 1;
+			
+			System.out.println("Ha salido un: "+(int)numero);
+			
+		}
+		
+		public static void ejercicio27() { //------------------------------------------------
+
+			
+			
 		}
 
 }
