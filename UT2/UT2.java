@@ -316,6 +316,7 @@ public class ut2 {
 		}
 		
 		public static void ejercicio24(Scanner sc) { //------------------------------------------------
+			// SE ASUME QUE EL USUARIO VA A INTRODUCIR UNA SEGUNDA FECHA MAYOR QUE LA PRIMERA, ASI COMO QUE TODOS LOS MESES TIENEN 30 DÍAS.
 			
 			System.out.println("Introduce el primer dia: ");
 			int firstDay = sc.nextInt();
@@ -339,6 +340,31 @@ public class ut2 {
 			int daysBetween = secondValue-firstValue;
 			
 			System.out.println("Entre las dos fechas hay "+daysBetween+" días.");
+			
+		}
+		
+		public static void ejercicio25() { //------------------------------------------------
+	
+			System.out.println("Introduce el nombre: ");
+			String name=sc.next();
+			sc.nextLine();
+			
+			System.out.println("Introduce el primer apellido: ");
+			String firstSurname=sc.next();
+			sc.nextLine();
+			
+			System.out.println("Introduce el segundo apellido: ");
+			String secondSurname=sc.next();
+			sc.nextLine();
+			
+			System.out.println("Introduce la edad: ");
+			int age=sc.nextInt();
+			
+			System.out.println("Soy "+name+" "+firstSurname+" "+secondSurname+" y mi edad es "+age+" años");
+			
+		}
+		
+		public static void ejercicio26() { //------------------------------------------------
 			
 		}
 
