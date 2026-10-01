@@ -7,7 +7,7 @@ public class Main {
 
         try(Scanner sc=new Scanner(System.in)) {
 
-            ut2.ejercicio21(sc);
+            ut2.ejercicio28(sc);
 
        }
 

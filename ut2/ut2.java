@@ -343,7 +343,7 @@ public class ut2 {
 			
 		}
 		
-		public static void ejercicio25() { //------------------------------------------------
+		public static void ejercicio25(Scanner sc) { //------------------------------------------------
 	
 			System.out.println("Introduce el nombre: ");
 			String name=sc.next();
@@ -374,7 +374,7 @@ public class ut2 {
 			
 		}
 		
-		public static void ejercicio27() { //------------------------------------------------
+		public static void ejercicio27(Scanner sc) { //------------------------------------------------
 
 			System.out.println("Escriba el nombre del articulo:");
 			String name=sc.next();
@@ -391,6 +391,32 @@ public class ut2 {
 			
 			System.out.println("Artículo: "+name+"\nPrecio: "+price+"€\nDescuento: "+discount+"%\nTOTAL: "+(price-discountAmount)+"€");
 					
+		}
+		
+		public static void ejercicio28(Scanner sc) { //------------------------------------------------
+			
+			// double iva=0.21; // IVA del 21%
+	
+			System.out.println("Escriba el nombre del articulo:");
+			String name=sc.nextLine();
+			
+			System.out.println("Escriba el precio del articulo:");
+			double price=sc.nextDouble();
+			
+			System.out.println("Introduzca el descuento x.xx%:");
+			double discount=sc.nextDouble();
+			
+			System.out.println("Introduzca el iva x.xx%:");
+			double iva=sc.nextDouble();
+			
+			double discountAmount=(price*(discount/100.0));
+			double discounted=(price-discountAmount);
+			
+			double ivaAmount=(discounted*(iva/100.0));
+			double totalWithTax=(discounted+ivaAmount);
+			
+			System.out.println("Artículo: "+name+"\nPrecio: "+price+"€\nDescuento: "+discount+"%\nTOTAL: "+discounted+"€\nTOTAL plus TAX: "+totalWithTax+"€");
+			
 		}
 
 }
