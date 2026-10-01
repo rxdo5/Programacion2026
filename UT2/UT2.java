@@ -376,8 +376,21 @@ public class ut2 {
 		
 		public static void ejercicio27() { //------------------------------------------------
 
+			System.out.println("Escriba el nombre del articulo:");
+			String name=sc.next();
 			
+			sc.nextLine();
 			
+			System.out.println("Escriba el precio del articulo:");
+			double price=sc.nextDouble();
+			
+			System.out.println("Introduzca el descuento x.xx%:");
+			double discount=sc.nextDouble();
+			
+			double discountAmount=(price*(discount/100));
+			
+			System.out.println("Artículo: "+name+"\nPrecio: "+price+"€\nDescuento: "+discount+"%\nTOTAL: "+(price-discountAmount)+"€");
+					
 		}
 
 }
